@@ -13,8 +13,7 @@ published: true
 
 I wanted to browse facebook and reddit, because the teachers were finally smart enough to change their logins, I can't access those sites anymore. And I don't want to crack any passwords because that's [multiple felonies](http://www.cga.ct.gov/2012/rpt/2012-R-0254.htm). Thankfully I now have the funds and the technical know-how to setup a VPN, because before I had no idea what the terms ssh, and public keys meant. A couple of days ago, I just found a 50 dollar credit coupon from Digital Ocean lying around from the TechCrunch Disrupt Hackathon I went to a while ago.
 
-### My first attempt /usr/local/lib/ruby/gems/2.0 
-
+### My first attempt 
 
 1. I tried using `ssh` into the server at school, but it didn't work because I kept on getting a connection reset by peer
 2. I ran using `-vvv` as an options and I thought it was an RSA1 error, so I regnerated my keys

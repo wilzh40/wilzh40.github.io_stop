@@ -27,7 +27,8 @@ After a very tedious setup process through `spark setup` I finally got the cente
 
 ### Step 3 Compiling manually
 
-Our github repo: [link](https://github.com/wilzh40/StrobeSpark).
+Our Github repo: [link](https://github.com/wilzh40/StrobeSpark).
+
 It uses some weird scripting language that converts an `.ipo` file into a firmware binary. So I had to kind of learn a new langugage.
 
 ### Step 4 Events
