@@ -1,0 +1,13 @@
+a {
+   
+    -webkit-transition: all .25s ease-in-out;
+    -moz-transition: all .25s ease-in-out;
+    transition: all .25s ease-in-out;
+
+
+}
+
+a:hover {
+	opacity: 0.5;
+
+} 
