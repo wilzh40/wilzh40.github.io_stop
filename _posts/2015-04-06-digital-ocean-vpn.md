@@ -11,6 +11,7 @@ published: true
 
 ### I wanted to create a VPN to circumvent school filters
 
+
 I wanted to browse facebook and reddit, because the teachers were finally smart enough to change their logins, I can't access those sites anymore. And I don't want to crack any passwords because that's [multiple felonies](http://www.cga.ct.gov/2012/rpt/2012-R-0254.htm). Thankfully I now have the funds and the technical know-how to setup a VPN, because before I had no idea what the terms ssh, and public keys meant. A couple of days ago, I just found a 50 dollar credit coupon from Digital Ocean lying around from the TechCrunch Disrupt Hackathon I went to a while ago.
 
 ### My first attempt 
