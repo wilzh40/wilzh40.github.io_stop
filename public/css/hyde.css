@@ -32,16 +32,16 @@
  */
 
 html {
-  font-family: "PT Sans", Helvetica, Arial, sans-serif;
+  font-family: "Gentium Book Basic","Slabo 27px", Helvetica, Arial, sans-serif;
 }
 @media (min-width: 48em) {
   html {
-    font-size: 12px;
+    font-size: 16px;
   }
 }
 @media (min-width: 58em) {
   html {
-    font-size: 18px;
+    font-size: 20px;
   }
 }
 
@@ -59,7 +59,7 @@ html {
   color: rgba(255,255,255,.5);
   background-color: #202020;
 }
-@media (min-width: 44em) {
+@media (min-width: 48em) {
   .sidebar {
     position: fixed;
     top: 0;

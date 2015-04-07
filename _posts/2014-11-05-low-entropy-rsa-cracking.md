@@ -17,11 +17,11 @@ There's a server that generates an RSA public key when you ping it by
 
 A didn't know basic shell commands, but quick stackoverflow search returned the answer:
 	
-   repeat 1000 {nc vuln2014.picoctf.com 51818 | cat >> keys.txt 
+   		repeat 1000 {nc vuln2014.picoctf.com 51818 | cat >> keys.txt 
 
 This pinged the keygen server 1000 times, and stored all the keys by appending it to a file called keys.txt in my PicoCTF folder. I then sorted it just for the sake of clarity
 
-	sort keys.txt | cat >> skeys.txt
+		sort keys.txt | cat >> skeys.txt
 
 ### Step 2 Sanitizing the key list
 

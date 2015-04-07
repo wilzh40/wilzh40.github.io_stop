@@ -26,5 +26,9 @@ paginate:         5
 # Custom vars
 version:          2.1.0
 
+
+resume:
+  link:           http://registry.jsonresume.org/wilzh40
 github:
+  link:		      https://github.com/wilzh40
   repo:           https://github.com/poole/hyde
