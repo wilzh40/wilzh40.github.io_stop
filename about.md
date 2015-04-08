@@ -2,7 +2,7 @@
 layout: page
 title: Portfolio
 ---
-<h1> Publiched Projects </h1>
+<h1> Published Projects </h1>
 
 <div id="container" class="js-masonry"
 data-masonry-options='{ "itemSelector": ".project" }'>
