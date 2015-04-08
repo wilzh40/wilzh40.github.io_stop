@@ -2,9 +2,8 @@
 layout: page
 title: Portfolio
 ---
-<h1> Published Projects </h1>
 
-<div id="container" class="js-masonry"
+<div id="container" class="js-masonry animated fadeInUp"
 data-masonry-options='{ "itemSelector": ".project" }'>
   {% for project in site.data.projects %}
   <div class="project">

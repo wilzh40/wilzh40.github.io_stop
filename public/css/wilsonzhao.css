@@ -22,17 +22,16 @@ a:hover {
 
 
 .sidebar h1 {
-    font-family: 'Abril Fatface', Helvetica, cursive;
+    font-family: Bebas Neue, Helvetica, cursive;
 }
 
 .sidebar img {
     display: none;
-
 }
 @media (min-width: 38em) {
     .sidebar img {
         display: block;
-        height: 75%;
-        width: 75%;
+        height: 65%;
+        width: 65%;
     }
 }
