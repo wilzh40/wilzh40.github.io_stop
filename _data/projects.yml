@@ -3,13 +3,13 @@
     github:     https://github.com/wilzh40/RoidAvoid
     itunes:     https://itunes.apple.com/us/app/roid-avoid/id882631756?mt=8
   date: 		2015-05-25
-  description: 	Won "Best Game" at CodeDay SF, Fall 2014. Made in 24 hours with cocos2d 3.x and Newtonian physics, with Paul Merill.
+  description: 	Won "Best Game" at CodeDay SF, Spring 2014. Made in 24 hours with cocos2d 3.x and Newtonian physics, with Paul Merill.
   images:       ["Roid_Avoid.png"]
 
 - title: 		Robo Bird
   links: 
     itunes:     https://itunes.apple.com/us/app/robo-bird/id942321586?mt=8
   date: 		2014-11-30
-  description: 	Insert description here
+  description: 	A simple physics game, made over the summer of 2014
   images:       ["RoboBird.png"]
   
