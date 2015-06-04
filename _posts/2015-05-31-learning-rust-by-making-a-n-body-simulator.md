@@ -13,7 +13,7 @@ published: true
 
 
 When I staying at Zach's place after the Stupid Hackathon in San Francisco, we discussed the various new languages popping up on the horizon. Rust was basically "Go but more awesome" and after taking a quick look at its capabilities, it sounded like the next big thing; my suppostion was supported by the various HackerNews articles that praised its coming and the [v1.0.0 release](http://blog.rust-lang.org/2014/12/12/1.0-Timeline.html). I was ready to take the plunge. 
-Fortunately, an opportunity presented itself; I had to make a computer simulation for a physics project, and an n-body-simulation sounded like a easy goal to aim for.
+Fortunately, an opportunity presented itself; I had to make a computer simulation for a physics project, and an n-body-simulation sounded like a easy goal to aim for. Furthermore, after learning the basics of t-mux and vim, I was ready to become a "true programmer" and got rid of my mouse. It was just me and my trusty keyboard. 
 
 ### Piston-2d
 
@@ -57,7 +57,41 @@ Returned an error because the `closure requires unique access to "self"`. My sol
         });
  AFTER every loop, refactoring the code 20 times, I finally realized that the best place for it was indeed before. 
 	
-            
+    
+### Gravity
+
+The hardest part was having a nested iterator to go through `self.bodies` twice and apply a Newtonian force to each of them. This is another instance of Rust "locking" an instance variable so we can't borrow twice. I tried multiple combinations of the following snipper to no avail. 
+
+	  for a in &mut self.bodies{
+            for b in &self.bodies{
+            }
+      }
+I had a brilliant idea...what if I clone the `vec!`?? However there seemed to be a problem, since the coreutil for cloning was not implemented for `Vec<Body>`. After intensive googling, placing the compiler flag `#[derive(Clone)]` before the Body struct did the trick.
+
+	  for a in self.bodies.clone(){
+            for b in &mut self.bodies{
+            }
+      }
+      
+ But...it still didn't work. I needed to reverse the order of the loops so I can summate the total acceleration and I got hit with another error...that `self.bodies.clone()` was a `moved value` and I'm a bad person. I did what any lazy programmer would do. If I can't clone something once, can I clone it twice? I'm a genius and a horrible person.
+ 
+ 	 let clone = self.bodies.clone();
+        for a in &mut self.bodies{
+            for b in clone.clone(){
+            .....
+
+Lastly, the code managed to compile, but there was a certain problem...if the bodies become close enough they will instantly accelerate out of the screen. 
+
+		let displacement = (b.position.0 - a.position.0, b.position.1 - a.position.1);
+        let angle = displacement.1.atan2(displacement.0);
+        let distance = (displacement.0.powf(2.0) + displacement.1.powf(2.0)).powf(0.5);
+        let accel_magnitude = G * m2 / (distance * distance) ; 
+         let acceleration = (angle.cos() * accel_magnitude, angle.sin() * accel_magnitude);
+
+When they became close enough, distance approached zero, and the magnitude approached infinite. After researching some simulators online, I found a damping constant did the trick. 
+
+	let eps = 1.5e1; //dampening parameter to avoid infinites  
+    let accel_magnitude = G * m2 / (distance * distance + eps * eps) ; 
         
             
             
