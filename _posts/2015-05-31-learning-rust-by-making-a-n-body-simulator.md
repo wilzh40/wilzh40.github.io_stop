@@ -34,6 +34,28 @@ Bringing input events into scope did not help, and I ended up with 7 lines dedic
             
 Another interesting tidbit about Rust is that you have to use references most of the time...calling a variable directly (`for b in self.bodies`) would create a borrowing error, as that statement takes ownership of the vector and its element. To iterate through the physic bodies one has to use `for b in &self.bodies`.
 
+I ran into the same problem trying to reference `self` in a closure. 
+
+	    self.gl.draw(args.viewport(), |c, gl| {
+        	for b in &self.bodies { //Render stuff here}
+        }
+Returned an error because the `closure requires unique access to "self"`. My solution was to move the iterator outside the closure, like so.
+	 for b in &self.bodies {
+            // Iterate through all the bodies
+
+            self.gl.draw(args.viewport(), |c, gl| {
+                let circle = rectangle::square(b.position.0, b.position.1, b.radius);                             
+            	ellipse(BLACK, circle, c.transform, gl);
+            }
+      }
+      
+ But I realized that I was missing a clear function, and after placing 
+ 
+ 	    self.gl.draw(args.viewport(), |c, gl| {
+            // Clear the scene after all bodies are drawn
+            clear(WHITE, gl);
+        });
+ AFTER every loop, refactoring the code 20 times, I finally realized that the best place for it was indeed before. 
 	
             
         
