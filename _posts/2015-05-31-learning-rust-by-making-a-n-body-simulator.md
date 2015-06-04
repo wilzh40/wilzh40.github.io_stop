@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Learning Rust by making a n body simulator
+title: "Learning Rust by making an N-body simulator"
 description: ""
 category: Programming
 tags: []
@@ -92,6 +92,18 @@ When they became close enough, distance approached zero, and the magnitude appro
 
 	let eps = 1.5e1; //dampening parameter to avoid infinites  
     let accel_magnitude = G * m2 / (distance * distance + eps * eps) ; 
-        
+    
+
+Last minute thoughts:
+
+- Looping through vecs and doing things with those vecs are extremely painful
+- Kind of annoying to type annotate when you can't divide a `f64` by an integer...you have to divide by `2.0` not just `2`
+- Writing functions for closures looks pretty hard. Heck, even understanding what they do is pretty hard.
+- It runs pretty fast!
+- Managing imports is a huge pain
+- That being said, the packaging system is pretty easy to setup, but hard to keep track of.
+
+
+You can check out the final github project [here](https://github.com/wilzh40/GravitySim-Rust).
             
             
