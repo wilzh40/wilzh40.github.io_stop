@@ -3,8 +3,10 @@ layout: page
 title: Portfolio
 ---
 
+
 <div id="container" class="js-masonry animated fadeInUp"
-data-masonry-options='{ "itemSelector": ".project" }'>
+data-masonry-options='{ "itemSelector": ".project", "gutter": 0
+}'>
   {% for project in site.data.projects %}
 
   <div class="project">
@@ -41,6 +43,5 @@ data-masonry-options='{ "itemSelector": ".project" }'>
 {% for award in site.data.awards %}
 <p> {{ award.title }} </p>
 {% endfor %}
-
 
 <script> msnry.layout()</script>
