@@ -43,3 +43,4 @@ data-masonry-options='{ "itemSelector": ".project" }'>
 {% endfor %}
 
 
+<script> msnry.layout()</script>
