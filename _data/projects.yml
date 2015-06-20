@@ -1,3 +1,11 @@
+- title: 		SoundSieve
+  links: 
+    challengepost:  http://challengepost.com/software/soundsieve
+  date: 		2015-02-07
+  description: 	Winner of HS Hacks II, out of ~2000 people. Tinder for Soundcloud that creates a preview of the song based on comment density. Built with Kevin Zeng and Brian Ng.
+  images:       ["SoundSieve.png"]
+
+
 - title: 		Roid Avoid
   links: 		
     github:     https://github.com/wilzh40/RoidAvoid
@@ -12,11 +20,4 @@
   date: 		2014-11-30
   description: 	A simple physics game, made over the summer of 2014
   images:       ["RoboBird.png"]
-  
-- title: 		SoundSieve
-  links: 
-    challengepost:  http://challengepost.com/software/soundsieve
-  date: 		2015-02-07
-  description: 	Winner of HS Hacks II, out of ~2000 people. Tinder for Soundcloud that creates a preview of the song based on comment density. Built with Kevin Zeng and Brian Ng.
-  images:       ["SoundSieve.png"]
   
