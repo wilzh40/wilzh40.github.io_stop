@@ -11,6 +11,7 @@ published: true
 
 ### I've been hearing a lot of great things about Rust lately
 
+![Imgur](http://i.imgur.com/6mTGvbA.gif?1)
 
 When I staying at Zach's place after the Stupid Hackathon in San Francisco, we discussed the various new languages popping up on the horizon. Rust was basically "Go but more awesome" and after taking a quick look at its capabilities, it sounded like the next big thing; my supposition was supported by the various HackerNews articles that praised its coming and the [v1.0.0 release](http://blog.rust-lang.org/2014/12/12/1.0-Timeline.html). I was ready to take the plunge. 
 Fortunately, an opportunity presented itself; I had to make a computer simulation for a physics project, and an n-body-simulation sounded like an easy goal to aim for. Furthermore, after learning the basics of t-mux and vim, I was ready to become a "true programmer" and got rid of my mouse. It was just me and my trusty keyboard. 
