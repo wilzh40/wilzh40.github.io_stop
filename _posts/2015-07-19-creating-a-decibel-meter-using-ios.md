@@ -11,10 +11,13 @@ published: true
 
 {% include JB/setup %}
 
-## At the Outside Lands hackathon I made an app called Decimate
+### At the Outside Lands hackathon I made an app called Decimate
+
+![]({{site.baseurl}}/img/outsidelands.png)
 
 ### Results
-Here's the final pitch video. [Hosted by the Outside Hacks Instagram.](https://instagram.com/p/5DjKroj4fy/?taken-by=outsidelandshackathon)
+Here's proof that I made in on the [Outside Hacks Instagram.](https://instagram.com/p/5DjKroj4fy/?taken-by=outsidelandshackathon)
+Here's the [Github Repo.](https://github.com/wilzh40/Deci-mate)
 
 ### Background
 On the way to the hackathon, I struggled to come up with a useful idea for an application that would prove useful to the general music-loving/festival-going population. Just as I was running out of brain juice, and just when BART drew closer to Montgomery station, a small a-ha moment hit me. Recently, I heard that [Rob Swire lost his hearing](http://www.edmtunes.com/2015/07/rob-swire-loses-hearing-deaf/), and I was positively heartbroken (even though, as I found out later, it was because of vaping). This caught my attention, as I personally experienced hearing pain after prolonged exposure to harmful decibel levels, a problem that would be exacerbated at festivals. I did some additional research and found that ["in a survey of 2,711 festival-goers in 2008, 84% said they experienced dullness of hearing or ringing in the ears after listening to loud music."](http://www.nhs.uk/Livewell/Festivalhealth/Pages/Protectyourears.aspx). 
@@ -22,6 +25,9 @@ Since decibels are on a logarithmic scale, at 120dB it can over 64x the times th
 I had found a real problem. Hearing loss occurs at all levels, and I want to help people enjoy music today..and tomorrow. Or that's how my pitch went. 
 
 I used OSHA standard levels to find the PEL (Preferable Exposure Limit) at each decibel level, calculated using this algorithm `t = 2((94−SPL)/3)`. I then calculated the weighted averages contiually taken at each decibel level, and fitted it into a percentage scale, decrimenting each 0.10 seconds until hearing damage will occur. 
+
+![]({{site.baseurl}}/img/noisecurve.gif)
+
 
 ### Challenges
 I made this a lot harder than I should have. Why didn't I just use the simple `AVRecorder` and their builtin decibel metering? That's boring. That's simple. That's inaccurate. More importantly, that wasn't fun. The real answer was that I wanted to learn how to manipulate raw buffer data, and learn I did. Sortof.
