@@ -81,4 +81,4 @@ And since I had no way of doing `thisClass.delegate` I had to make another metho
     }
 
 
-In the end I had a pretty straightforward app. 
+In the end I had a pretty straightforward app, and it was a great learning experience. Hopefully I'll apply what I learned into hacking an LED light to glow to the beat of music (my next project). 
