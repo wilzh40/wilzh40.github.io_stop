@@ -15,7 +15,7 @@ title:            Wilson Zhao
 tagline:          'Student, Programmer, Hackathon Attendee, CMU Class of 2019'
 description:      'Programmer, Hackathon Attendee, CMU Class of 2019'
 url:              hyde.getpoole.com
-baseurl:          http://www.wilsonzhao.com
+baseurl:          / 
 
 author:
   name:           'Wilson Zhao'
