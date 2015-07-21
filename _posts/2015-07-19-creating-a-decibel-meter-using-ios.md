@@ -13,7 +13,7 @@ published: true
 
 ### At the Outside Lands hackathon I made an app called Decimate
 
-![]({{site.baseurl}}/img/outsidelands.png)
+![]({{site.baseurl}}img/outsidelands.png)
 
 ### Results
 Here's proof that I made in on the [Outside Hacks Instagram.](https://instagram.com/p/5DjKroj4fy/?taken-by=outsidelandshackathon)
@@ -26,7 +26,7 @@ I had found a real problem. Hearing loss occurs at all levels, and I want to hel
 
 I used OSHA standard levels to find the PEL (Preferable Exposure Limit) at each decibel level, calculated using this algorithm `t = 2((94−SPL)/3)`. I then calculated the weighted averages contiually taken at each decibel level, and fitted it into a percentage scale, decrimenting each 0.10 seconds until hearing damage will occur. 
 
-![]({{site.baseurl}}/img/noisecurve.gif)
+![]({{site.baseurl}}img/noisecurve.gif)
 
 
 ### Challenges
