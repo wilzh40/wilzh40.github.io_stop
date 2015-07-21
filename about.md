@@ -7,7 +7,7 @@ title: Portfolio
 <!--div id="container" class="js-masonry animated fadeInUp"
 data-masonry-options='{ "itemSelector": ".project", "gutter": 0
 }'-->
-<div class="container animated fadeInUp"> 
+<div class="animated fadeInUp" id="mason"> 
   {% for project in site.data.projects %}
 
   <div class="project">
