@@ -3,10 +3,11 @@ layout: page
 title: Portfolio
 ---
 
-
-<div id="container" class="js-masonry animated fadeInUp"
+<script src="/public/js/masonry.js"></script>
+<!--div id="container" class="js-masonry animated fadeInUp"
 data-masonry-options='{ "itemSelector": ".project", "gutter": 0
-}'>
+}'-->
+<div class="container animated fadeInUp"> 
   {% for project in site.data.projects %}
 
   <div class="project">
