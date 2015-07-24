@@ -42,3 +42,4 @@ data-masonry-options='{ "itemSelector": ".project", "gutter": 0
 
 {% for award in site.data.awards %}
 <p> {{ award.title }} </p>
+{% endfor %}
