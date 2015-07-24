@@ -36,13 +36,9 @@ data-masonry-options='{ "itemSelector": ".project", "gutter": 0
   </div>
   {% endfor %}
   
-  <script> msnry.layout()</script>
 </div>
 
 <h2 class="post-title"> Awards </h2>
 
 {% for award in site.data.awards %}
 <p> {{ award.title }} </p>
-{% endfor %}
-
-<script> msnry.layout()</script>
