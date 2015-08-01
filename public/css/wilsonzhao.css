@@ -8,6 +8,13 @@ a:hover {
 	opacity: 0.5;
 } 
 
+.project a {
+    padding: 0px;
+}
+
+.project p {
+    display: inline;
+}
 
 ul.social-buttons {
     padding: 0;
@@ -20,7 +27,7 @@ ul.social-buttons {
     -webkit-margin-after: 1em;
     -webkit-margin-start: 0px;
     -webkit-margin-end: 0px;
-    -webkit-padding-start: 40px;
+    -webkit-padding-start: 0px;
 }
 
 
