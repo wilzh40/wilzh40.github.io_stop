@@ -29,12 +29,18 @@
         {% endif %}
       {% endfor %}
 
-      <a class="sidebar-nav-item" href="{{ site.resume.link }}">Resume</a>
-      <a class="sidebar-nav-item" href="{{ site.github.link }}">GitHub </a>
-     <a class="sidebar-nav-item" href="mailto:wilson.y.zhao@gmail.com">Contact Me</a>
+    <a class="sidebar-nav-item" href="{{ site.resume.link }}">Resume</a>
      
     </nav>
+      <ul class="list-inline social-buttons">
+          <li><a href="https://github.com/wilzh40"><i class="fa fa-github"></i></a>
+          </li>
+          <li><a href="https://www.linkedin.com/in/wilsonyzhao"><i class="fa fa-linkedin"></i></a>
+          </li>
+          <li><a href="mailto:wilson.y.zhao@gmail.com"><i class="fa fa-envelope"></i></a>
+          </li>
 
+      </ul>
     <p>&copy; {{ site.time | date: '%Y' }}. All rights reserved.</p>
   </div>
 </div>
