@@ -4,6 +4,7 @@ title: Portfolio
 ---
 
 <script src="/public/js/masonry.js"></script>
+<!-- -->
 <!--div id="container" class="js-masonry animated fadeInUp"
 data-masonry-options='{ "itemSelector": ".project", "gutter": 0
 }'-->
