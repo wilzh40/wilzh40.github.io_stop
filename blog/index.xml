@@ -2,21 +2,21 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Blog on Wilson Zhao</title>
-    <link>localhost:1313/blog/</link>
+    <link>wilsonzhao.com/blog/</link>
     <description>Recent content in Blog on Wilson Zhao</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-US</language>
     <lastBuildDate>Sat, 22 Aug 2015 06:42:21 -0700</lastBuildDate>
     
-	<atom:link href="localhost:1313/blog/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="wilsonzhao.com/blog/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>Hello_worlds</title>
-      <link>localhost:1313/blog/hello_worlds/</link>
+      <link>wilsonzhao.com/blog/hello_worlds/</link>
       <pubDate>Sat, 14 Jul 2018 18:21:41 -0700</pubDate>
       
-      <guid>localhost:1313/blog/hello_worlds/</guid>
+      <guid>wilsonzhao.com/blog/hello_worlds/</guid>
       <description>On a bored Saturday, I realized that my old website (with all my iOS app descriptions and occasionally cringey high school blog posts) died when I spilled a cup of free coffee I got from the 6th floor of the Gates-Hillman center at CMU.
 Most expensive cup of coffee in my life.
 Now that I have a brand new laptop and hopefully much better coffee control, I&amp;rsquo;ve decided to create a new website.</description>
